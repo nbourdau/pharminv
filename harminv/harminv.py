@@ -1,9 +1,9 @@
 import numpy as np
 
-from . import charminv
+from .charminv import Harminv as cHarminv
 
 
-class Harminv(charminv.Harminv):
+class Harminv(cHarminv):
     threshold = {'error': 0.1,
                  'relative_error': np.inf,
                  'amplitude': 0.0,
